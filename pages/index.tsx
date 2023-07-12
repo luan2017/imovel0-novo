@@ -7,7 +7,18 @@ import SmallCard from "@components/SmallCard";
 import LargeCard from "@components/LargeCard";
 import Footer from '@components/Footer';
 
-const Home: NextPage<{cardsData: any, exploreData: any}> = ({ cardsData, exploreData }) => {
+type CardsProps = {
+  img: string;
+  title: string;
+}[]
+
+type ExplorerProps = {
+  img: string;
+  distance: string;
+  location: string;
+}[]
+
+const Home: NextPage<{cardsData: CardsProps, exploreData: ExplorerProps}> = ({ cardsData, exploreData }) => {
   return (
     <div>
       <Head>
