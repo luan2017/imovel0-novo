@@ -1,4 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
-
-module.exports = nextConfig
+module.exports = {
+    reactStrictMode: true,
+    images: {
+      domains: ["links.papareact.com"],
+    },
+    env: {
+      mapbox_key: 'pk.eyJ1IjoiZmFiaWRlaWEiLCJhIjoiY2xlcmR1YmRlMGN4ajNzbmw5ZHNiY3loNiJ9.Z0LpZL5RD1iKwVJQBZl88Q'
+    }
+  };
+  
