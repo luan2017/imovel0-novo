@@ -7,7 +7,7 @@ import SmallCard from "@components/SmallCard";
 import LargeCard from "@components/LargeCard";
 import Footer from '@components/Footer';
 
-const Home: NextPage = ({ cardsData, exploreData }) => {
+const Home: NextPage<{cardsData: any, exploreData: any}> = ({ cardsData, exploreData }) => {
   return (
     <div>
       <Head>
@@ -16,7 +16,7 @@ const Home: NextPage = ({ cardsData, exploreData }) => {
       </Head>
 
       {/* Header */}
-      <Header username="Bem-vindo Anderson" />
+      <Header username="Bem-vindo Anderson" placeholder={""} />
       {/* Banner */}
       <Banner />
 
